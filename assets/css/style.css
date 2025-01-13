@@ -274,7 +274,8 @@ a {
 
 /*======================= How it works================== */
 .works {
-    margin: 100px 0;
+    padding: 100px 0;
+    background: #F6FBFF;
 }
 
 .work__deps {
@@ -322,4 +323,52 @@ a {
     margin-top: 18px;
     color: #2E80CE;
     font-weight: 400;
+}
+
+/* ================== about ===================== */
+.About {
+    margin-top: 83px;
+    padding: 85px 0 206px;
+    /* background: cornflowerblue; */
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__media {
+    width: 49%;
+}
+
+.about-content {
+    width: 40%;
+}
+
+.about__img {
+    position: relative;
+}
+
+.about__img--big {
+    display: flex;
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+    object-fit: cover;
+}
+
+.about__img--small {
+    position: absolute;
+    top: 121px;
+    left: 238px;
+    width: 332px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.about-content__btn {
+    margin-top: 38px;
 }
