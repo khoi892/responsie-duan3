@@ -15,6 +15,8 @@ body {
     font-family: "Sora", sans-serif;
 }
 
+
+
 /* =========================common=================== */
 
 .container {
@@ -49,7 +51,6 @@ a {
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.2;
-    /* 120% */
     letter-spacing: -1px;
 }
 
@@ -59,6 +60,36 @@ a {
     font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.67;
+}
+
+/* control btn */
+.control {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+}
+
+.control__btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px;
+    border: 1px solid #575F66;
+    background: #fff;
+    cursor: pointer;
+}
+
+.control__btn:hover {
+    background: #2E80CE;
+    border-color: #2E80CE;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.control-icon--next {
+    rotate: 180deg;
 }
 
 /* ============================header==================== */
@@ -294,12 +325,13 @@ a {
     border-radius: 4px;
     background: #FFF;
     border: 16px solid #EAF6FF;
+    transition: 0.25s;
+
 }
 
 .work__item:hover {
     border: 16px solid #2E80CE;
     transform: translateY(-16px);
-    transition: 0.25s;
 }
 
 .work__item .work__heading {
@@ -372,3 +404,202 @@ a {
 .about-content__btn {
     margin-top: 38px;
 }
+
+/* =====================team==================== */
+.team {
+    padding: 85px 0;
+}
+
+.team-header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.team__cta {
+    margin-top: 38px;
+}
+
+.team__list {
+    margin-top: 70px;
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.team-item:hover .team-item__thumb {
+    transform: scale(1.1);
+}
+
+.team-item__thumb {
+    height: 290px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.team-item__img-bg {
+    border-radius: 6px;
+    background: #EAF6FF;
+    padding-top: 28px;
+    overflow: hidden;
+}
+
+.team-item__name {
+    margin-top: 12px;
+    color: #10375C;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.team-item__desc {
+    color: #575F66;
+    text-align: center;
+    font-size: 1.4;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.team__control {
+    margin-top: 18px;
+    justify-content: center;
+}
+
+/* =====================install - mobile================ */
+.install {
+    margin: 180px 0 85px;
+}
+
+.install__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    height: 427px;
+    border-radius: 4px;
+    background: #2E80CE;
+}
+
+.install__img {
+    position: absolute;
+    bottom: 0;
+    width: 284px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.install__content {
+    width: 589px;
+}
+
+.install__heading {
+    width: 489px;
+    color: #fff;
+}
+
+.install__desc {
+    margin-top: 18px;
+    max-width: 586px;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.install__row {
+    margin-top: 38px;
+    display: flex;
+    column-gap: 28px;
+    align-items: center;
+}
+
+/* ======================blog=================== */
+.blog {
+    margin: 85px 0;
+}
+
+.blog__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__content {
+    width: 40%;
+}
+
+.blog__list {
+    width: 46%;
+}
+
+.blog__more {
+    display: flex;
+    margin: 28px 0;
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.56;
+    text-decoration-line: underline;
+}
+
+.blog__list {
+    display: flex;
+    gap: 30px;
+}
+
+.blog-item {
+    width: 270px;
+    border-radius: 12px;
+    border: 1px solid #E8EBEE;
+    background: #FFF;
+    transition: 0.25s;
+
+}
+
+.blog-item:hover {
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog-item__thumb {
+    width: 270px;
+    height: 172px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+}
+
+.blog-item__body {
+    padding: 18px 24px 22px 21px;
+}
+
+.blog-item__heading {
+    color: #10375C;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.63;
+}
+
+.blog-item__desc {
+    margin: 10px 0 12px;
+    color: #575F66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+}
+
+.blog-item__more {
+    color: #10375C;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.blog-item__more:hover {
+    color: #10375C;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+/* ====================== cta ======================== */
