@@ -629,14 +629,19 @@ a {
     background: #F6FBFF;
 }
 
-.crossbar {
-    margin-top: 18px;
-    display: inline-block;
-    justify-content: center;
+.cta__heading::after {
+    display: block;
     content: "";
     width: 136px;
     height: 2px;
     background: #2E80CE;
+    margin: 18px auto 0;
+}
+
+.cta__desc {
+    width: 617px;
+    margin: 18px auto 0;
+
 }
 
 .cta__btn {
