@@ -619,3 +619,29 @@ a {
 }
 
 /* ====================== cta ======================== */
+.cta {
+    padding: 85px 0;
+}
+
+.cta__info {
+    padding: 100px 179px;
+    text-align: center;
+    background: #F6FBFF;
+}
+
+.crossbar {
+    margin-top: 18px;
+    display: inline-block;
+    justify-content: center;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.cta__btn {
+    display: inline-block;
+    margin-top: 53px;
+}
+
+/* ==================footer================ */
