@@ -47,10 +47,32 @@ a {
     font-style: normal;
     font-weight: 400;
     border-radius: 999px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(95deg, rgba(2, 0, 36, 1) 0%, rgba(9, 66, 121, 1) 33%, rgba(0, 212, 255, 1) 100%);
+    transition: width 0.25s linear;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    left: 0;
+    width: 100%;
 }
 
 .btn:hover {
     opacity: 0.9;
+
 }
 
 .section-heading {
