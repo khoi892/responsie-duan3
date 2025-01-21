@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- title -->
     <title>shine smile</title>
 </head>
 
@@ -84,9 +87,10 @@
                 <div class="hero__media">
                     <figure class="hero__images">
                         <img src="./assets/img/hero-1.jpg" alt="Exceptional dental care for all ages."
-                            class="hero__img hero__img--large">
+                            class="hero__img hero__img--large" data-aos="fade-up" data-aos-duration="1250">
                         <img src="./assets/img/hero-2.jpg" alt="Exceptional dental care for all ages."
-                            class="hero__img hero__img--small">
+                            class="hero__img hero__img--small" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1000">
                     </figure>
                 </div>
             </section>
@@ -104,7 +108,8 @@
                 <div class="service__row">
                     <!-- service left -->
                     <figure>
-                        <img src="./assets/img/hero-3.jpg" alt="Our services" class="service__img">
+                        <img src="./assets/img/hero-3.jpg" alt="Our services" class="service__img" data-aos="fade-right"
+                            data-aos-anchor-placement="center-bottom">
                     </figure>
                     <!-- service right -->
                     <div class="service__list">
@@ -237,9 +242,11 @@
                     <div class="about__media">
                         <figure class="about__img">
                             <img src="./assets/img/hero-3.jpg" alt="Take back your smile with shine."
-                                class="about__img--big">
+                                class="about__img--big" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                data-aos-delay="100" data-aos-offset="0">
                             <img src="./assets/img/hero-2.jpg" alt="Take back your smile with shine."
-                                class="about__img--small">
+                                class="about__img--small" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+                                data-aos-delay="1000" data-aos-offset="0">
                         </figure>
                     </div>
                     <!-- about right -->
@@ -330,7 +337,8 @@
                 <div class="install__inner">
                     <!-- install left -->
                     <figure>
-                        <img src="./assets/img/Rectangle.png" alt="Rect angle" class="install__img">
+                        <img src="./assets/img/Rectangle.png" alt="Rect angle" class="install__img" data-aos="fade-up"
+                            data-aos-anchor-placement="center-bottom">
                     </figure>
                     <!-- install right -->
                     <section class="install__content">
@@ -432,6 +440,7 @@
             </div>
         </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <!-- top footer -->
@@ -541,6 +550,11 @@
         </div>
         </div>
     </footer>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
